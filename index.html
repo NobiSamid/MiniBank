@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Bank</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Welcome to <span class="font-semibold text-purple-600">Baper</span> hotel</h1>
+    </header>
+    <main>
+        <section class="bg-green-100 w-3/4 p-8 mx-auto rounded mt-4">
+            <h3 class=" text-center text-2xl mb-4">Please log-in</h3>
+            <div class="grid justify-items-center">
+                <input id="user-email" class="w-4/12 block border rounded border-gray-400 mb-2 px-2" type="text" placeholder="Your email">
+                <input id="user-pass" class="w-3/12 border rounded border-gray-400 mb-2 px-2 block" type="password" placeholder="Password">
+                <button id="login-submit" class="w-2/12 bg-yellow-600 rounded px-4 py-2 text-white font-medium">Submit</button>
+            </div>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>
