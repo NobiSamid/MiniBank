@@ -6,11 +6,11 @@ document.getElementById('depo-btn').addEventListener
     const newDepoAmountText = depositInput.value;
     const newDepoAmount = parseFloat(newDepoAmountText);
     //update deposit total
-    const depostiTotal = document.getElementById('depo-total');
-    const prevDepoText = depostiTotal.innerText;
+    const depositTotal = document.getElementById('depo-total');
+    const prevDepoText = depositTotal.innerText;
     const prevDepoAmount = parseFloat(prevDepoText);
     const newDepoTotal = prevDepoAmount + newDepoAmount;
-    depostiTotal.innerText = newDepoTotal;
+    depositTotal.innerText = newDepoTotal;
 
     //update account balance
     const balanceTotal = document.getElementById('balance');
