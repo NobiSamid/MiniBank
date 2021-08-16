@@ -1,10 +1,22 @@
 // handle deposit button event
-
-document.getElementById('depo-btn').addEventListener
-('click', function() {
+function getInputValue(){
     const depositInput = document.getElementById('depo-input');
     const newDepoAmountText = depositInput.value;
-    const newDepoAmount = parseFloat(newDepoAmountText);
+    const newDepoAmount = parseFloat(newDepoAmountText); 
+    //clear input field
+    depositInput.value = '';
+    return newDepoAmount;
+    
+   }
+document.getElementById('depo-btn').addEventListener
+('click', function() {
+    /*
+     const depositInput = document.getElementById('depo-input');
+    const newDepoAmountText = depositInput.value;
+    const newDepoAmount = parseFloat(newDepoAmountText); 
+    */
+   const newDepoAmount = getInputValue();
+  
     //update deposit total
     const depositTotal = document.getElementById('depo-total');
     const prevDepoText = depositTotal.innerText;
@@ -19,8 +31,8 @@ document.getElementById('depo-btn').addEventListener
     const newBalanceTotal = prevBalanceTotal + newDepoAmount;
     balanceTotal.innerText = newBalanceTotal;
 
-    //clear input field
-    depositInput.value = '';
+    /* //clear input field
+    depositInput.value = ''; */
 
 })
 
